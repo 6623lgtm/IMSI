@@ -7,7 +7,7 @@ RUN apt-get update
 
 # GR-GSM
 RUN export TZ=America/New_York && export DEBIAN_FRONTEND=noninteractive && apt-get install -y  gnuradio gnuradio-dev git cmake autoconf libtool pkg-config g++ gcc make libc6 \
-libc6-dev libcppunit-dev libcppunit-dev swig doxygen liblog4cpp5v5 liblog4cpp5-dev python3-scipy \
+libc6-dev libcppunit-dev swig doxygen liblog4cpp5v5 liblog4cpp5-dev python3-scipy \
 gr-osmosdr libosmocore libosmocore-dev
 
 RUN git clone https://github.com/bkerler/gr-gsm.git
